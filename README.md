@@ -1,4 +1,3 @@
-
 # 📦 Ejercicios con Arrays en PHP
 
 Este repositorio contiene una serie de ejercicios prácticos enfocados en el uso y manipulación de **arrays en PHP**, incluyendo arrays indexados, asociativos, funciones personalizadas y operaciones básicas de programación.
@@ -23,7 +22,6 @@ El objetivo de estos ejercicios es comprender cómo se crean, recorren, modifica
 - Crear un array `$X = array(10, 20, 30, 40, 50, 60);`
 - Mostrar su tamaño.
 - Eliminar un elemento del array.
-- Reorganizar los índices (`array_values()`).
 - Mostrar nuevamente el tamaño del array actualizado.
 
 ### ✅ Ejercicio 3: Función de coincidencia de caracteres
@@ -33,7 +31,7 @@ El objetivo de estos ejercicios es comprender cómo se crean, recorren, modifica
   - Un carácter.
 - La función debe devolver `true` si **todas** las palabras del array contienen ese carácter.
 
-📌 *Ejemplo:*  
+📌 _Ejemplo:_  
 `["hola", "Php", "Html"]` con `"h"` → `true`  
 `["hola", "Php", "Html"]` con `"l"` → `false`
 
@@ -57,8 +55,17 @@ El objetivo de estos ejercicios es comprender cómo se crean, recorren, modifica
 
 Si deseas clonar el proyecto desde GitHub y ejecutarlo en tu equipo, sigue estos pasos:
 
-```bash
+````bash
 git clone https://github.com/Antonia90/1.3-Arrays.git
-cd earrays_nivel_1
+cd arrays_nivel_1
 
+## ▶️ Ejecución
 
+Para visualizar los ejercicios:
+
+Asegúrate de que el servidor PHP esté corriendo (opcional, recomendado):
+
+```bash
+php -S localhost:8000
+
+Abre tu navegador y accede a http://localhost:8000/ejercicios_nivel_1.php

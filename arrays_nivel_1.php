@@ -1,10 +1,10 @@
 <?php
 //Ejercicio 1
 echo "<h3>Ejercicio 1</h3>";
-$numeros = [];
-array_push($numeros, 1, 2, 3, 4, 5);
+$numbers = [];
+array_push($numbers, 1, 2, 3, 4, 5);
 
-foreach ($numeros as $x) {
+foreach ($numbers as $x) {
     echo "$x <br>";
 }
 
@@ -18,25 +18,25 @@ var_dump($x);
 
 //Ejercicio 3
 echo "<h3>Ejercicio 3</h3>";
-$cadena = array("hola", "Php", "Html");
+$list = array("hola", "Php", "Html");
 
-function tienenMismosCaracteres($palabras, $caracter)
+function hasSameCharacters(array $words, string $character) : bool
 {
-    $palabrasContienenCaracter = [];
-    $caracter = strtolower($caracter);
-    foreach ($palabras as $palabra) {
-        if (str_contains(strtolower($palabra), $caracter)) {
-            $palabrasContienenCaracter[] = $palabra;
+    $wordsContainsCharacter = [];
+    $character = strtolower($character);
+    foreach ($words as $word) {
+        if (str_contains(strtolower($word), $character)) {
+            $wordsContainsCharacter[] = $word;
         }
     }
-    if (count($palabras) === count($palabrasContienenCaracter)) {
+    if (count($words) === count($wordsContainsCharacter)) {
         return true;
     } else {
         return false;
     }
 }
 
-if (tienenMismosCaracteres($cadena, "h")) {
+if (hasSameCharacters($list, "h")) {
     echo "true <br>";
 } else {
     echo "false <br>";
@@ -46,8 +46,8 @@ if (tienenMismosCaracteres($cadena, "h")) {
 //Ejercicio 4
 echo "<h3>Ejercicio 4</h3>";
 
-$infoPersonal = ["Nombre" => "Antonia", "Edad" => 34, "Email" => "antominnucci@gmail.com", "Comida Favorita" => "gnocchi"];
-//var_dump($infoPersonal);
-foreach ($infoPersonal as $info => $data) {
+$personalInfo = ["Nombre" => "Antonia", "Edad" => 34, "Email" => "antominnucci@gmail.com", "Comida Favorita" => "gnocchi"];
+//var_dump($personalInfo);
+foreach ($personalInfo as $info => $data) {
     echo "$info: $data <br>";
 }
