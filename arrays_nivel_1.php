@@ -20,20 +20,16 @@ var_dump($x);
 echo "<h3>Ejercicio 3</h3>";
 $list = array("hola", "Php", "Html");
 
-function hasSameCharacters(array $words, string $character) : bool
+function hasSameCharacters(array $words, string $character): bool
 {
-    $wordsContainsCharacter = [];
+
     $character = strtolower($character);
     foreach ($words as $word) {
-        if (str_contains(strtolower($word), $character)) {
-            $wordsContainsCharacter[] = $word;
+        if (!str_contains(strtolower($word), $character)) {
+            return false;
         }
     }
-    if (count($words) === count($wordsContainsCharacter)) {
-        return true;
-    } else {
-        return false;
-    }
+    return true;
 }
 
 if (hasSameCharacters($list, "h")) {
