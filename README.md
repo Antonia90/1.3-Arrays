@@ -45,6 +45,21 @@ El objetivo de estos ejercicios es comprender cómo se crean, recorren, modifica
 
 ---
 
+## 🔢 Nivel 2 - Ejercicios
+
+### ✅ Ejercicio 1
+
+Crea un programa que contenga dos arrays de números enteros/floats. Una vez creados, muestra por pantalla el resultado de:
+
+-La intersección de los dos arrays (números en común)
+-La mezcla de ambos arrays.
+
+### ✅ Ejercicio 2
+
+Crea un programa que liste las notas de los/as alumnos/as de una clase. Por eso deberemos utilizar un array asociativo donde la clave será el nombre de cada alumno/a.
+
+Además, crea una función que, dadas las notas de todos los alumnos/as, nos muestre tanto la media de la nota de cada alumno, como la nota media de la clase entera.
+
 ## Requisitos
 
 -PHP 7.4 o superior
@@ -55,8 +70,7 @@ El objetivo de estos ejercicios es comprender cómo se crean, recorren, modifica
 
 Si deseas clonar el proyecto desde GitHub y ejecutarlo en tu equipo, sigue estos pasos:
 
-````bash
-git clone https://github.com/Antonia90/1.3-Arrays.git
+git clone <https://github.com/Antonia90/1.3-Arrays.git>
 cd arrays_nivel_1
 
 ## ▶️ Ejecución
@@ -65,7 +79,6 @@ Para visualizar los ejercicios:
 
 Asegúrate de que el servidor PHP esté corriendo (opcional, recomendado):
 
-```bash
 php -S localhost:8000
 
-Abre tu navegador y accede a http://localhost:8000/ejercicios_nivel_1.php
+Abre tu navegador y accede a <http://localhost:8000/ejercicios_nivel_1.php>
