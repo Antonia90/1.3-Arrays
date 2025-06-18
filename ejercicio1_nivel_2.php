@@ -11,13 +11,7 @@ array_push($array2, 3, 6, 8.5, 9, 10);
 
 $arrayCommonNumbers = [];
 
-foreach ($array1 as $x) {
-    foreach ($array2 as $y) {
-        if ($x === $y) {
-            array_push($arrayCommonNumbers, $x);
-        }
-    }
-}
+$arrayCommonNumbers = array_intersect($array1, $array2);
 
 $bothArrays = array_merge($array1, $array2);
 
