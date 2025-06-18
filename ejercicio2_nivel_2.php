@@ -4,26 +4,35 @@ $alumnos = [
     "Marta" => [6, 10, 8, 5, 10],
     "Luisa" => [9, 10, 9, 8, 9],
 ];
-
-function showAverages(array $course): void
+function calculateStudentAverage(array $notes): float
 {
-    $totalSum = 0;
-    $notesTotalQuantity = 0;
-    echo "<h3>Promedio por alumno: </h3>";
+    return array_sum($notes) / count($notes);
+}
+
+function showStudentAverage(array $course): array
+{
+    $totalNotes = 0;
+    $noteQuantity = 0;
+
+    echo "<h3>Promedio por alumno:</h3>";
     foreach ($course as $name => $notes) {
-        $studentSum = array_sum($notes);
-        $notesQuantity = count($notes);
-        $studentAverage = $studentSum / $notesQuantity;
+        $average = calculateStudentAverage($notes);
+        echo "$name: " . number_format($average, 2) . "<br>";
 
-        echo "$name: $studentAverage<br>";
-        
-        $totalSum += $studentSum;
-        $notesTotalQuantity += $notesQuantity;
+        $totalNotes += array_sum($notes);
+        $noteQuantity += count($notes);
     }
-    $averageCourse = $totalSum / $notesTotalQuantity;
-    echo "<h3>Promedio de la clase:</h3>" . $averageCourse;
-};
+
+    return [$totalNotes, $noteQuantity];
+}
+
+function showCourseAverage(array $course): void
+{
+    list($totalNotes, $noteQuantity) = showStudentAverage($course);
+    $courseAverage = $totalNotes / $noteQuantity;
+
+    echo "<h3>Promedio de la clase:</h3>" . number_format($courseAverage, 2);
+}
 
 
-
-showAverages($alumnos);
+showStudentAverage($alumnos);
