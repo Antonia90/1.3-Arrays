@@ -60,6 +60,24 @@ Crea un programa que liste las notas de los/as alumnos/as de una clase. Por eso 
 
 Además, crea una función que, dadas las notas de todos los alumnos/as, nos muestre tanto la media de la nota de cada alumno, como la nota media de la clase entera.
 
+## 🔢 Nivel 3 - Ejercicios
+
+### ✅ Ejercicio 1 - array_map()
+
+Dado un array de enteros, haz un programa que:
+
+Devuelva cada valor del array elevado al cubo utilizando la función array_map().
+
+### ✅ Ejercicio 2 - array_filter()
+
+Dado un array de strings, haz un programa que:
+
+Devuelva un array donde sólo estén los strings que tengan un nombre par de caracteres usando la función array_filter().
+
+### ✅ Ejercicio 3 - array_reduce()
+
+Dado un array de enteros, haz un programa que nos devuelva la suma de los enteros del array que sean primeros  utilizando la función array_reduce().
+
 ## Requisitos
 
 -PHP 7.4 o superior
